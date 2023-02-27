@@ -1,0 +1,18 @@
+write a c prog for a simple calculator. 
+a) Program should get two decimal inputs A & B from user.
+b) Define separate functions for below operations and print the results in main()
+c) Make sure the functions don't alter the input arguments.
+  c.1)  Add A & B,
+  c.2)  SUB A & B, 
+  c.3)  Multiply A & B,
+  c.4)  Divide A & B (results can be decimal),
+  c.4)  Increment A & B by 1,
+  c.5)  Decrement A & B by 1, 
+  c.6)  Print largest number of A & B.
+  c.7)  Check if A & B are equal.
+  c.8)  print A & B in Hex.
+  c.9)  Double the inut A without using arithemetic operators and print.
+  c.10)  Print left most nibble of A & 6th bit of B.
+d) Track the total num of functions calls done and print.
+  d.1) Use global variable, increment it inside function and print at end of the main().
+e) Track the num of time each function is called and print it inside the function on each call
