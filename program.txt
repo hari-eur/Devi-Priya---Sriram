@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<stdlib.h>
+static int c=10;
+static int d=11;
+static int count =0;
+int add(int a, int b){
+	++count;
+	printf("function call is %d\n", count);
+	return a+b;
+}
+int sub(int a,int b){
+	++count;
+	printf("function call is %d\n", count);
+	return a-b;
+}
+int multi(int a, int b){
+	++count;
+	printf("function call is %d\n",count);
+	return a*b;
+}
+int divi(int a, int b){
+	++count;
+	printf("function call is %d\n", count);
+	return a/b;
+}
+int inc(){
+	++count;
+	printf("Function call is %d\n", count);
+	++c;
+	++d;
+	printf("The incremented value of c and d are %d %d\n",c,d);
+}
+int dec(){
+	++count;
+	printf("function call is %d\n", count);
+	--c;
+	--d;
+	printf("the decremented value of c and d are %d %d\n`",c,d);
+}
+
+
+int main(){
+	int a,b;
+	printf("Enter the inputs");
+	scanf("%d",&a);
+	scanf("%d",&b);
+	printf("The sum of two variables is %d\n",add(a,b));
+	printf("The Difference of two variable is \n%d",sub(a,b));
+	printf("The product of two variable is %d\n",multi(a,b));
+	printf("The division of two variable is %d\n",divi(a,b));
+	inc();
+	dec();
+}
